@@ -8,22 +8,13 @@
         <script src="./js/angular.min.js"></script>
         <script src="./js/app/app.module.js"></script>
         <script src="./js/app/app.config.js"></script>
-        
-        <style>
-            .new-class {
-                font-size: 72px;
-            }
+        <script src="./js/app/blog-list/blog-list.module.js"></script>
+        <script src="./js/app/blog-list/blog-list.component.js"></script>
 
-            .other-class {
-                font-size: 32px;
-            }
-        </style>
     </head>
     <body>
-        <h1 class="new-class" ng-class="{'other-class' : name}"> 
-            Hello 
-            <span ng-if="name">{{ name }}</span>
-            <span ng-if="!name">World</span> !</h1>
-        <input type="text" ng-model="name"/>
+        <div class="" ng-controller="BlogListController">
+            {{ title }}
+        </div>
     </body>
 </html>
